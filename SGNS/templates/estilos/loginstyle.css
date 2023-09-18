@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url("/static/camisetaMujer1.png");
+    background-size: cover;
+    background-position: center;*/
+}
+      
+      /* Estilos para el contenedor del formulario */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:radial-gradient(circle at center,#754ed0,#3a188c);
+    /*background-color: #f2f2f2;*/
+}
+      
+      /* Estilos para el formulario de inicio de sesión */
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+      
+/* Estilos para los campos del formulario */
+.login-form input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+      
+/* Estilos para el botón de inicio de sesión */
+.login-form button {
+    width: 98%;
+    padding: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #592CC3;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+      
+/* Estilos para el botón de inicio de sesión cuando se pasa el cursor por encima */
+.login-form button:hover {
+    background-color: #45a049;
+}
+      
+/* Estilos para el enlace de registro */
+.login-form p {
+    text-align: center;
+    margin-top: 15px;
+}
+      
+.login-form p a {
+    color: #592CC3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+      
+.login-form p a:hover {
+    color: #8361D1;
+}
