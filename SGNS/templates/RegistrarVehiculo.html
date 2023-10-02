@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Estilos generales */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .carrito-button,
+        .logout-button {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .carrito-button:hover,
+        .logout-button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            gap: 10px;
+            flex-direction: column;
+        }
+    </style>
+    <title>Registro de vehiculo</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Registro de vehiculo</h1>
+            
+        </div>
+        <div>
+            <p> Nombre de usuario</p>
+            <a href="/Logout" class="logout-button">Cerrar sesión</a>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form method="POST">
+            <label for="inputMarca">Marca:</label>
+            <input type="text" id="inputMarca" name="marca" required><br>
+
+            <label for="inputModelo">Modelo:</label>
+            <input type="text" id="inputModelo" name="modelo" required><br>
+
+            <label for="inputColor">Color:</label>
+            <input type="text" id="inputColor" name="color" required><br>
+
+            <label for="inputKilometraje">Kilometraje:</label>
+            <input type="text" id="inputkilometraje" name="kilometraje" required><br>
+
+            <label for="inputNumeroSerie">Numero de serie:</label>
+            <input type="text" id="inputNumeroSerie" name="numeroSerie" required><br>
+
+            <label for="inputPlaca">Placa:</label>
+            <input type="text" id="inputPlaca" name="placa" required><br>
+
+            <label for="inputIdCliente">Idliente:</label>
+            <input type="number" id="inputIdCliente" name="idCliente" required><br>
+
+            <button type="submit" id="botonRegistrarVehiculo">Registrar Vehiculo</button>
+        </form>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
